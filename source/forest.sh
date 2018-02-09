@@ -4,6 +4,9 @@ function randname {
 }
 words=`cat /usr/share/dict/words | grep "^[^']*$" | tr '[:upper:]' '[:lower:]' | shuf | head -n 60`
 search=`echo $words | tr -s ' \011' '\012' | head -n 5`
+rm -rf ./forest
+mkdir -p ./forest
+basedir=$(realpath ./forest)
 function branch {
     declare cwd=$1
     shift
@@ -16,14 +19,16 @@ function branch {
             name=$cwd/`randname`
             mkdir -p $name
             branch $name $next $@
+        elif [ `realpath $cwd` != $basedir ] && [ $roll -eq 1 ]; then
+            name=`dirname $cwd`/`randname`
+            mkdir -p $name
+            branch $name $next $@
         else
             echo $next > $cwd/`randname`
             branch $cwd $@
         fi
     fi
 }
-rm -rf ./forest
-mkdir -p ./forest
 branch ./forest $words
 echo
 
