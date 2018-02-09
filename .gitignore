@@ -3,3 +3,5 @@ executables/*
 java/*.class
 handout.zip
 magic
+bigfile.txt
+forest

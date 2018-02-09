@@ -10,7 +10,26 @@ UNIX Lesson 1 Challenges
   - Use `touch` to create a new file. Create a file called `elephant` in the `bar` directory that's inside the `foo` directory, and then another file called `poodle` in the other `bar` directory you made.
   - Use `cd` to go back to the root of the repository.
 
-## Executing files
+## Reading Files
+
+- Try to read `bigfile.txt` with `cat`. What happens?
+- Try reading it using `less` instead.
+
+Here's some of the useful keyboard shortcuts for `less`:
+- pageup/down to page up or down
+- `j` to go down one line, `k` to go up one line
+- `g` to go to the top, `G` to go to the bottom
+- `/` to bring up a search menu. Type what you want to search and press `Enter`. Then go through your search results with `n` (next match) and `N` (prev)
+- `q` to quit
+
+These keyboard shortcuts are relatively commonly used, so it's useful to get to know them.
+
+## Searching
+
+- Open `search.txt`.
+- In the first section, there are 5 words. These words are scattered among a forest of files and directories. Your job is to find the filename that contains that word. (Hint: figure out how to use `grep`)
+
+## Executing Files
 
 - `cd` to the directory called `executables`.
 - Run the file `exec1`. What is its output?
