@@ -38,3 +38,6 @@ forest:
 
 garbage:
 	@./source/garbage.sh
+
+clean:
+	rm -rf executables/exec1 executables/exec2 java/*.class handout.zip magic bigfile.txt forest garbage
