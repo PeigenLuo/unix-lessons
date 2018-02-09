@@ -6,15 +6,18 @@ handout: bigfile.txt \
 		magic \
 		search.txt
 	rm -f handout.zip
-	zip -r handout.zip \
-		bigfile.txt \
-		executables \
-		fruity \
-		magic \
-		forest \
-		garbage \
-		search.txt \
-		README.md
+	ln -s `pwd` lesson1
+	zip -r \
+		lesson1/handout.zip \
+		lesson1/bigfile.txt \
+		lesson1/executables \
+		lesson1/fruity \
+		lesson1/magic \
+		lesson1/forest \
+		lesson1/garbage \
+		lesson1/search.txt \
+		lesson1/README.md
+	rm lesson1
 	
 bigfile.txt:
 	for x in `seq 1 1000`; do \
