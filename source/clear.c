@@ -8,7 +8,9 @@ int main() {
     char home_env[6 + strlen(home)];
     sprintf(home_env, "HOME=%s", home);
     char *path_env = "PATH=";
-    char *envp[4] = {home_env, path_env, NULL};
+    char *ps1_env = "PS1=$ ";
+    char *envp[4] = {home_env, path_env, ps1_env, NULL};
+    char *argv[4] = {"/bin/bash", "--norc", "--noprofile", NULL};
     printf("I've removed everything from your PATH. Good luck!\n");
-    execve("/bin/sh", NULL, envp);
+    execve("/bin/bash", argv, envp);
 }
