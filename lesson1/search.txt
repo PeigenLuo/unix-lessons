@@ -1,0 +1,8 @@
+Look for these 5 words
+Put the filename in which they appear
+
+supercomputer : 
+mechanized : 
+productive : 
+omnipotent : 
+burgles : 
