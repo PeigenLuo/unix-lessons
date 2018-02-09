@@ -7,6 +7,9 @@ int main() {
     char *home = getenv("HOME");
     char home_env[6 + strlen(home)];
     sprintf(home_env, "HOME=%s", home);
-    char *envp[2] = {home_env, NULL};
+    char *path_env = "PATH=";
+    char *ps1_env = "PS1=$";
+    char *envp[4] = {home_env, path_env, ps1_env, NULL};
+    printf("I've removed everything from your PATH. Good luck!\n");
     execve("/bin/sh", NULL, envp);
 }

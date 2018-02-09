@@ -20,6 +20,15 @@ Executing files:
 - [ ] Why can't you run the file `exec2`? How can you change that?
 - [ ] Try to run the file `exec3`, but do it the same way you ran the previous executables. Don't use `python` or `python3` to run it.
 
+Now go back to the root of the repository.
+- [ ] Try running each of the three executables again, but this time from the root directory, rather than from within the `executables` directory.
+
 Filesystem Hierarchy:
 
 - [ ] Open a new terminal, but keep your current one open. You should have two terminals now. In the second one, type `./magic`. This should drop you into another shell. You should see a prompt starting with `$`.
+- [ ] Try to do the first `cat` exercise again. Does this still work?
+- [ ] Try to execute the executable files. Does this still work?
+- [ ] Why do you think `cd` still works, but `cat` doesn't? (Hint: type `help`)
+
+Type `exit` at any time to leave this shell.
+

@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main() {
-    printf("thanks for executing, come again.");
+    printf("thanks for executing, come again.\n");
 }
