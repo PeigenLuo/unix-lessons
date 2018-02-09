@@ -1,4 +1,5 @@
 executables/*
 !executables/exec3
+java/*.class
 handout.zip
 magic
