@@ -26,8 +26,8 @@ These keyboard shortcuts are relatively commonly used, so it's useful to get to 
 
 ## Searching
 
-- Open `search.txt`.
-- In the first section, there are 5 words. These words are scattered among a forest of files and directories. Your job is to find the filename that contains that word. (Hint: figure out how to use `grep`)
+- Open `search.txt`. Inside are 5 words. These words are scattered among a forest of files and directories. Your job is to find the filename that contains that word. (Hint: figure out how to use `grep`)
+- Inside the folder `garbage` there are exactly 7 files that contain a series of english words, rather than random garbage. Find their names.
 
 ## Executing Files
 
