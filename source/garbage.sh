@@ -14,6 +14,6 @@ for i in `seq 1 1000`; do
     done
     if [ $found == 0 ]; then
         # echo "not found"
-        cat /dev/urandom | head -c 1024 > ./garbage/$name
+        cat /dev/urandom | head -c 128 > ./garbage/$name
     fi
 done
