@@ -1,2 +1,4 @@
 executables/*
+!executables/exec3
 handout.zip
+magic

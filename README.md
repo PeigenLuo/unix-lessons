@@ -16,9 +16,10 @@ Navigation:
 Executing files:
 
 - [ ] `cd` to the directory called `executables`.
-- [ ] Run the executable file `exec1`. What is its output?
-- [ ] Why can't you run the executable file `exec2`? How can you change that?
+- [ ] Run the file `exec1`. What is its output?
+- [ ] Why can't you run the file `exec2`? How can you change that?
+- [ ] Try to run the file `exec3`, but do it the same way you ran the previous executables. Don't use `python` or `python3` to run it.
 
 Filesystem Hierarchy:
 
-- [ ] Open a new terminal, but keep your current one open. You should have two terminals now. In the second one, type `exec bash`.
+- [ ] Open a new terminal, but keep your current one open. You should have two terminals now. In the second one, type `./magic`. This should drop you into another shell. You should see a prompt starting with `$`.
